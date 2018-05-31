@@ -71,7 +71,21 @@ export const constantRouterMap = [
       }
     ]
   },
-
+  {
+    path: '/base_user',
+    component: Layout,
+    redirect: '/base_user/index',
+    name: '用户管理',
+    meta: { title: '用户管理', icon: 'example' },
+    children: [
+      {
+        path: 'list',
+        name: '用户列表',
+        component: () => import('@/views/base_user/list'),
+        meta: { title: '用户列表', icon: 'table' }
+      }
+    ]
+  },
   { path: '*', redirect: '/404', hidden: true }
 ]
 
