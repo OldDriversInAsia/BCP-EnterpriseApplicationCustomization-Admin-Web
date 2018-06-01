@@ -53,7 +53,7 @@ export default {
         pageNum: 1,
         pageSize: 15
       },
-      total: 100
+      total: 0
     }
   },
   filters: {
