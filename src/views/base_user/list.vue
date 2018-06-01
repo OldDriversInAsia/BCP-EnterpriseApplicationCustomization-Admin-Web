@@ -51,7 +51,7 @@ export default {
       listLoading: true,
       listQuery: {
         pageNum: 1,
-        pageSize: 15
+        pageSize: 10
       },
       total: 0
     }
