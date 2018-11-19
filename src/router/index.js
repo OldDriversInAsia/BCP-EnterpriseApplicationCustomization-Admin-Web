@@ -86,6 +86,21 @@ export const constantRouterMap = [
       }
     ]
   },
+  {
+    path: '/im',
+    component: Layout,
+    redirect: '/im/index',
+    name: '聊天界面',
+    meta: { title: '聊天界面', icon: 'message' },
+    children: [
+      {
+        path: 'index',
+        name: '聊天界面',
+        component: () => import('@/views/im/index'),
+        meta: { title: '聊天界面', icon: 'message' }
+      }
+    ]
+  },
   { path: '*', redirect: '/404', hidden: true }
 ]
 
